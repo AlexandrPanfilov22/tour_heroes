@@ -4,6 +4,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 import { MessageComponent } from './components/message/message.component';
+import {HeroesRoutingModule} from "./heroes-routing.module";
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { MessageComponent } from './components/message/message.component';
   imports: [
     CommonModule,
     FormsModule,
+    HeroesRoutingModule,
   ],
     exports: [
         HeroesComponent,
