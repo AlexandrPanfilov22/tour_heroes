@@ -5,9 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 import { MessageComponent } from './components/message/message.component';
 import { HeroesRoutingModule } from "./heroes-routing.module";
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
 import { InMemoryDataService } from "./services/in-memory-data.service";
 import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
+import { HeroFormComponent } from './components/hero-form/hero-form.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
     HeroesComponent,
     HeroDetailComponent,
     MessageComponent,
+    HeroFormComponent,
   ],
   imports: [
     CommonModule,
@@ -26,8 +28,9 @@ import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
     HeroesRoutingModule,
   ],
     exports: [
-        HeroesComponent,
-        MessageComponent,
+      HeroesComponent,
+      MessageComponent,
+      HeroFormComponent,
     ],
 })
 export class HeroesModule { }
