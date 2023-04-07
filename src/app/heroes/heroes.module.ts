@@ -20,7 +20,6 @@ import { HeroFormComponent } from './components/hero-form/hero-form.component';
   ],
   imports: [
     CommonModule,
-    HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     ),
